@@ -5,6 +5,16 @@ npm install
 npm start
 ```
 
+## Things learned
+  ***Focus of the project:*** Practice handling projects already started, much like most projects you cross while working in a company. 
+  * The code passed as a parameter of React.useState() will run each time the component renders, but React.useState() will handle that value only one time
+    * Example: if you use localStorage.getItem() to set the value of the parameter passed to React.useState, localStorage.getItem will run every render.
+    * Solution: "Lazy state initialization", make the functionality needed inside a function, and pass that function as a parameter (the function will return the value)
+  * Optional changing operator: You can write "?" before accessing a property of an object to ensure that it will not be accessed if the variable you are treating as an object doesn't exist. 
+    * Example: Object?.key1 ; Array?[45] // Were Object / Array is undefined.
+  ** Firebase Handling **
+  * 
+
 Head over to https://vitejs.dev/ to learn more about configuring vite
 ## About Scrimba
 
