@@ -6,7 +6,7 @@ The objective of this project was to practice handling already-started projects,
 ## Things learned
   ### Javascript
   * Optional changing operator: You can write "?" before accessing a property of an object to ensure that it will not be accessed if the variable you are treating as an object doesn't exist. 
-    * **Example**: Object?.key1 ; Array?[45] // Were Object / Array is undefined.
+    * **Example**: Object?.key1 ; Array?[45] // Where Object / Array is undefined.
   ### React
   * The code passed as a parameter of React.useState() will run each time the component renders, but React.useState() will handle that value only one time
     * **Example**: if you use localStorage.getItem() to set the value of the parameter passed to React.useState, localStorage.getItem will run every render.
